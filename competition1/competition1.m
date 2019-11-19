@@ -6,8 +6,8 @@ P = -1.202*(s-1)/(s*(s+9)*(s^2+12*s+56.25));
 % step(P,2);
 % title('Open-loop step response');
 
-%% Design the PID controller  %J = 27.5137
-Kp = 220.6;
+%% Design the PID controller
+Kp = 220;
 Ki = 2.3;
 Kd = 78;
 C = pid(Kp,Ki,Kd);
