@@ -10,8 +10,9 @@ xlabel('Frequncy (log scale) [Hz]');ylabel('magnitude [dB]');
 grid on;
 
 %% Parameter setup
-P = zpk([],[],0);      % unknown plant  
-F = zpk([-0.001, 0, -50],[-0.1, -10,-10],1);      % Feedforward controller
+P = zpk([],[],0);      % unknown plant 
+% guess P = 
+F = zpk([-0.001, 0, -50],[-0.1, -10,-10],0.025);      % Feedforward controller
 %F = zpk([],[],0); 
 %C = zpk([-0.001, 0, -50],[-0.1, -10, -10],1);      % Feedback controller
 C = zpk([],[],0); 
